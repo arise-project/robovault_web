@@ -41,3 +41,31 @@ php bin/console server:run
 
 
 # Install
+
+composer create-project symfony/skeleton myrest
+
+cd myrest
+
+composer require server
+
+composer require annotations
+
+composer require jms/serializer-bundle (yes - do recipe)
+
+composer require friendsofsymfony/rest-bundle (no - don't do recipe)
+
+composer require generator
+
+php bin/console make:controller (BooksController - ex.)
+
+php bin/console server:run 0.0.0.0:8000
+
+run from browser or postman:
+
+http://localhost:8000/books
+
+
+#Oauth2
+
+Getting started REST API with Symfony 4
+https://www.adcisolutions.com/knowledge/getting-started-rest-api-symfony-4
